@@ -1,0 +1,32 @@
+{
+  "name": "pawan-quote-bot",
+  "version": "0.1.0",
+  "description": "WhatsApp group quotation bot and admin dashboard for chemical traders",
+  "scripts": {
+    "start": "node --no-warnings=ExperimentalWarning --import tsx src/index.ts",
+    "dev": "WA_TRANSPORT=mock node --no-warnings=ExperimentalWarning --import tsx --watch src/index.ts",
+    "test": "node --no-warnings=ExperimentalWarning --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "create-user": "node --no-warnings=ExperimentalWarning --import tsx src/scripts/create-user.ts"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@node-rs/argon2": "2.0.2",
+    "baileys": "7.0.0-rc14",
+    "express": "5.1.0",
+    "pino": "9.14.0",
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/node": "22.20.5",
+    "@types/qrcode": "1.5.6",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  }
+}

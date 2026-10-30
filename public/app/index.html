@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Quotation dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand" id="brand">Quotation dashboard</span>
+    <span class="conn"><span class="dot" id="conn-dot"></span><span id="conn-text">Checking WhatsApp…</span></span>
+    <span class="grow"></span>
+    <button class="danger" id="kill" title="Stops all bot replies at once">Stop all replies</button>
+    <span class="small muted" id="who"></span>
+    <button class="link" id="logout">Sign out</button>
+  </header>
+  <div class="killbar hidden" id="killbar">All replies are stopped. The bot is reading messages but sending nothing.</div>
+  <div class="layout">
+    <nav class="side" id="nav">
+      <a href="#live" data-view="live">Live</a>
+      <a href="#rates" data-view="rates">Rates <span class="badge hidden" id="b-rates"></span></a>
+      <a href="#groups" data-view="groups">Groups</a>
+      <a href="#templates" data-view="templates">Templates</a>
+      <a href="#approvals" data-view="approvals">Approvals <span class="badge hidden" id="b-approvals"></span></a>
+      <a href="#unmatched" data-view="unmatched">Unmatched <span class="badge hidden" id="b-unmatched"></span></a>
+      <a href="#simulator" data-view="simulator">Simulator</a>
+      <a href="#reports" data-view="reports">Reports</a>
+      <a href="#settings" data-view="settings">Settings</a>
+    </nav>
+    <main id="main"></main>
+  </div>
+  <dialog id="dialog"></dialog>
+  <div class="toast hidden" id="toast" role="status"></div>
+  <script type="module" src="/app/app.js"></script>
+</body>
+</html>

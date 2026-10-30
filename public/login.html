@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Sign in</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <form class="login" id="login">
+    <h1>Sign in to the quotation dashboard</h1>
+    <label><span>Email</span><input name="email" type="email" autocomplete="username" required></label>
+    <label><span>Password</span><input name="password" type="password" autocomplete="current-password" required></label>
+    <p class="error hidden" id="err" role="alert"></p>
+    <button class="primary" type="submit">Sign in</button>
+  </form>
+  <script src="/login.js"></script>
+</body>
+</html>
