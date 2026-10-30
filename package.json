@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit",
     "create-user": "node --no-warnings=ExperimentalWarning --import tsx src/scripts/create-user.ts"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "@node-rs/argon2": "2.0.2",
     "baileys": "7.0.0-rc14",
